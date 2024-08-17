@@ -34,8 +34,8 @@ console.log(typeof null);
 console.log(typeof undefined);
 sym = Symbol("YES");
 console.log(sym);
-n = BigInt('1223');
-console.log(n);
+nn = BigInt(1223);
+console.log(nn);
 console.log(typeof 'Jonas');
 
 let year;
@@ -147,3 +147,11 @@ console.log('23' * '2'); // In this case string getting converted to number
 let n = '1' + 1;
 n = n - 1;
 console.log(n);
+
+console.log(2+3+4 + '9');
+
+console.log('10' - '4' - '3' - 2 + '5');
+
+// Type Coersion may lead to bugs so we don't rely on type Coersion
+
+
