@@ -9,13 +9,14 @@ if(passTest) hasDriverLicence = true;
 
 if(hasDriverLicence) console.log('I can drive car. : D')
 
-const private = 534;
+// const private = 534;
 
 function Fruitprocessor(apples , oranges){
     console.log(apples,oranges);
     const juice = `Juice with ${apples} apples and ${oranges} oranges`;
-
-
+    // console.log(juice);
+     return juice;
 }
 
-Fruitprocessor(2,3);
+const result = Fruitprocessor(2,3);
+console.log(result);
