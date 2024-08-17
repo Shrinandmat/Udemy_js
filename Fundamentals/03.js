@@ -112,3 +112,9 @@ console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
 console.log(`My value of expression is ${2+4+6}`);
 
 // In Template literals we pass the expressions
+
+const bill = 275;
+
+const tip = bill <= 300 && bill >= 75 ? bill * 0.15 : bill * 0.20;
+
+console.log(tip);
