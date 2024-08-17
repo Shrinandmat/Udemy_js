@@ -36,7 +36,32 @@ sym = Symbol("YES");
 console.log(sym);
 n = BigInt('1223');
 console.log(n);
+console.log(typeof 'Jonas');
 
+let year;
+console.log(year);
+console.log(typeof year);
 
+let age = 30;
+age = 31;
+console.log(age);
 
+// const n;
 
+// const b = 45;
+// b = 30;
+
+const currentage = 2037 - 1881;
+const currentage2 = 2037 - 1991;
+console.log(currentage,currentage2);
+
+const isFullAge = currentage > 10;
+console.log(isFullAge);
+
+const now = 2024 - 2014;
+console.log(now - 2 >= now - 2);
+
+let x = y = 25-10-5;
+console.log(x,y);
+
+// - has left to right precedence and * has right to left precedence
