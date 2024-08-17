@@ -65,3 +65,32 @@ let x = y = 25-10-5;
 console.log(x,y);
 
 // - has left to right precedence and * has right to left precedence
+const massMark = 20;
+const heightMark = 34;
+const massJohn = 35;
+const heightJohn = 50;
+
+const BMIMark = massMark/(heightMark**2);
+const BMIJohn = massJohn/(heightJohn*heightJohn);
+const largeMarkBMI = BMIMark > BMIJohn;
+console.log(largeMarkBMI);
+console.log(BMIMark,BMIJohn);
+
+const FirstName = 'Jonas';
+const job = 'Teacher'
+const Birthyear = 2002;
+const cyear = 2024;
+const aged = cyear - Birthyear;
+const Jonas = "I'am " + FirstName + " a " + aged +" aged " + job;
+console.log(Jonas);
+
+// Template Literals'
+console.log(`I'm ${FirstName} a ${aged} aged ${job}`);
+
+console.log(`Just a regular String`);
+console.log(`
+    String'
+   multiple'
+    line`);
+
+
