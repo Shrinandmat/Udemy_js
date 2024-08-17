@@ -70,11 +70,11 @@ const heightMark = 34;
 const massJohn = 35;
 const heightJohn = 50;
 
-const BMIMark = massMark/(heightMark**2);
-const BMIJohn = massJohn/(heightJohn*heightJohn);
-const largeMarkBMI = BMIMark > BMIJohn;
-console.log(largeMarkBMI);
-console.log(BMIMark,BMIJohn);
+// const BMIMark = massMark/(heightMark**2);
+// const BMIJohn = massJohn/(heightJohn*heightJohn);
+// const largeMarkBMI = BMIMark > BMIJohn;
+// console.log(largeMarkBMI);
+// console.log(BMIMark,BMIJohn);
 
 const FirstName = 'Jonas';
 const job = 'Teacher'
@@ -93,4 +93,57 @@ console.log(`
    multiple'
     line`);
 
+const age2 = 16;
+const isOldEnough = age2 >= 18;
+if(isOldEnough){
+    console.log(`Sarah can drive car 🚗`);
+}else{
+    const yearsleft = 18 - age2;
+    console.log(`Sarah is too young. wait another ${yearsleft} years`);
+}
+// Use window + . for using emojis
 
+const birthyear = 2012;
+let centuary;
+if(birthyear < 2000)
+{
+    centuary = 20;
+}else{
+    centuary = 21;
+}
+console.log(centuary);
+
+
+const BMIMark = massMark/(heightMark**2);
+const BMIJohn = massJohn/(heightJohn*heightJohn);
+const largeMarkBMI = BMIMark > BMIJohn;
+console.log(largeMarkBMI);
+console.log(BMIMark,BMIJohn);
+if(BMIMark > BMIJohn){
+
+console.log(`Mark's BMI is greater than John's viz ${BMIMark}`);
+}else{
+console.log(`John's BMI is greater than Mark's viz ${BMIJohn}`);
+}
+
+
+// Type Conversion
+const inputyear = '1991';
+console.log(Number(inputyear) , inputyear);
+console.log(Number(inputyear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23));
+
+// Type Coersion'
+console.log('I am ' + 23 + ' years old.') // In this case number is converted in string
+
+console.log('23' - '10' + 9); // In this case string getting converted to number
+
+console.log('23' * '2'); // In this case string getting converted to number
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
