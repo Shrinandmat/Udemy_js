@@ -116,3 +116,24 @@ const mark = {
       for(let i = jonasArray.length - 1 ; i >= 0 ; i--){
          console.log(jonasArray[i]  , i);
       }  
+
+      for(let exercise = 0 ; exercise < 4 ; exercise++){
+         console.log(`--- Starting exercise ${exercise}`);
+         for(let rep = 1; rep < 6 ; rep ++){
+            console.log(`rep no. ${rep}`);
+         }
+      }
+      
+      let rep = 1;
+      while(rep <= 10){
+         console.log(`Lifting weight of rep no. ${rep}`);
+         rep++;
+      }
+
+      let dice = Math.trunc(Math.random() * 6 + 1);
+
+      while(dice != 6)
+      {
+       dice = Math.trunc(Math.random() * 6 + 1);
+        console.log(dice);    
+      }
