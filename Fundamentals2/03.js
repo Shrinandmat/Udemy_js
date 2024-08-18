@@ -90,6 +90,29 @@ const mark = {
 
       for(let i = 0 ; i < jonasArray.length ; i++){
          console.log(jonasArray[i] , typeof jonasArray[i]);
-         jonasArray.push(typeof jonasArray[i]);
+         // jonasArray.push(typeof jonasArray[i]);
       }
 
+      const years = [1991,2003,2045,2034];
+      const ans = [];
+      
+      console.log("Only numbers");
+      for(let i = 0 ; i < years.length ; i++){
+       ans.push(2037 - years[i]);
+       if(typeof years[i] !== 'number') continue;
+       console.log(ans[i] , typeof ans[i])
+      }  
+      
+
+
+
+      for(let i = 0 ; i < years.length ; i++){
+         ans.push(2037 - years[i]);
+         if(typeof years[i] !== 'number') continue;
+         console.log(ans[i] , typeof ans[i])
+        }  
+        
+  
+      for(let i = jonasArray.length - 1 ; i >= 0 ; i--){
+         console.log(jonasArray[i]  , i);
+      }  
