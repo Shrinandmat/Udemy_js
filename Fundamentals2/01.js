@@ -64,7 +64,7 @@ const yearsuntilRetirement2 = (birthyear3,firstname) => {
     const age = 2037 - birthyear3;
     const retirement = 65 - age;
     // return retirement;
-   return `${firstname} retires in ${retirement} years`;
+   return `${firstname} retires in ${retirement}yearn`;
 }
 const str = yearsuntilRetirement2(2002,'Shrinand');
 console.log(str);
@@ -127,8 +127,8 @@ const avg = (a,b,c) => {
 console.log(avg(2,2,2));
 
 
-const scoreDolphins = (33,45,66);
-const scoreKoalas = (45,34,78);
+let scoreDolphins = (33,45,66);
+let scoreKoalas = (45,34,78);
 
 
 console.log(scoreDolphins,scoreKoalas);
@@ -147,11 +147,46 @@ const checkWinner = function (avgDolphins, avgKoalas) {
   checkWinner(576, 111);
 
   // Test 2
-scoreDolphins = calcAverage(85, 54, 41);
-scoreKoalas = calcAverage(23, 34, 27);
+scoreDolphins = avg(85, 54, 41);
+scoreKoalas = avg(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 
 const friends = ['Micheal' , 'Steve' , 'Peter'];
 
 console.log(friends);
+
+const years = new Array(2023,1944,2056,1977);
+console.log(years);
+console.log(years[0]);
+console.log(years.length);
+console.log(friends[friends.length-1]);
+
+friends[2] = 'Rayan';
+// We have declared array with const but still we are able to change the element
+console.log(friends);
+
+// friends = ['Bob','jonas'];
+
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+console.log(jonas.length);
+
+
+const year = [2012,1024,1978,1934];
+console.log(year);
+
+ calcAge = function (birthYeah) {
+    return 2037 - birthYeah;
+  }
+
+console.log(calcAge(2023));
+
+const yearn = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(yearn[0]);
+const age20 = calcAge(yearn[1]);
+const  age30 = calcAge([yearn.length - 1]);
+console.log(age1, age20, age30);
