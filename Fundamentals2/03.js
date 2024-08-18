@@ -1,0 +1,4 @@
+çonst jonas = {
+    firstname : 'Jonas',
+    
+}
